@@ -14,7 +14,7 @@ function Main() {
 
 
         case 4:
-
+            ImprimeVetor();
             break;
 
 
@@ -48,10 +48,21 @@ function Menu() {
 }
 
 function ColetaVetor() {
-    const array = []
-    const size = 10
+    const vetor = [];
+    const size = 10;
     for (let i = 0; i < size; i++) {
-        array[i] = +prompt(`Informe o ${i + 1}º Valor do Vetor`)
-        console.log(array[i]);
+        vetor[i] = +prompt(`Informe o ${i + 1}º Valor do Vetor`);
+    }
+    return vetor;
+}
+function ImprimeVetor(){
+    console.log("Dados do Vetor: ");
+    for(let i = 0; i < vetor.length; i++){
+        if (i < vetor.length - 1) {
+            console.log(`${vetor[i]}`);
+        } else {
+            console.log(vetor[i]);
+            console.log(" ");
+        }
     }
 }
