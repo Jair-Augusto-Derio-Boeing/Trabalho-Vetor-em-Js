@@ -1,25 +1,26 @@
 function Main() {
+
     switch (Menu()) {
         case 1:
             ColetaVetor();
             break;
 
         case 2:
-
+            GeraVetorRandom();
             break;
 
         case 3:
-
-            break;
-
-
-        case 4:
             ImprimeVetor();
             break;
 
 
-        case 0:
+        case 4:
+            ImprimeVetorInvertido();
+            break;
 
+
+        case 0:
+            console.log("Algoritmo Finalizado!");
             break;
 
         default:
@@ -52,12 +53,18 @@ function ColetaVetor() {
     const size = 10;
     for (let i = 0; i < size; i++) {
         vetor[i] = +prompt(`Informe o ${i + 1}º Valor do Vetor`);
+        console.log(`${i + 1}º Valor: ${vetor[i]}`);
     }
-    return vetor;
+    return [];
 }
-function ImprimeVetor(){
+
+function GeraVetorRandom() {
+    console.log("GeraVetorRandom");
+}
+
+function ImprimeVetor() {
     console.log("Dados do Vetor: ");
-    for(let i = 0; i < vetor.length; i++){
+    for (let i = 0; i < vetor.length; i++) {
         if (i < vetor.length - 1) {
             console.log(`${vetor[i]}`);
         } else {
@@ -65,4 +72,7 @@ function ImprimeVetor(){
             console.log(" ");
         }
     }
+}
+function ImprimeVetorInvertido() {
+    console.log("ImprimeVetorInvertido");
 }
