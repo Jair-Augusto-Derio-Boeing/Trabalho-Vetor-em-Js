@@ -1,5 +1,55 @@
+h1 {
+    font-size: 79px;
+    font-weight: 700;
+    color: #000000;
+    background: linear-gradient(48deg, #0F1035, #365486, #7FC7D9, #DCF2F1);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(4px 4px 3px black);
+}
+
+
+
+
+
 #gradient{
     min-width: 100vh;
     min-height: 100vh;
-    
+    background: linear-gradient(48deg, #DCF2F1, #7FC7D9, #365486, #0F1035);
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite alternate;
+}
+
+
+
+@keyframes text{
+    0% {
+        background-position: 0% 50%;
+
+    }
+    50% {
+        background-position: 100% 50%;
+
+    }
+    100% {
+        background-position: 0% 50%;
+        
+    }
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+
+    }
+    50% {
+        background-position: 100% 50%;
+
+    }
+    100% {
+        background-position: 0% 50%;
+        
+    }
 }
